@@ -14,7 +14,7 @@ public class Main {
         int q = m / 10 + m % 10;
         for (String input : wuw) {
             int qwer = replaceDuplicatesWithTemplate(input).length();
-            int G = (qwer + w + q) * 64 + (f.charAt(0) - 'A' + 1) * 256;
+            int G = qwer + (w + q) * 64 + (f.charAt(0) - 'A' + 1) * 256;
             String x = Integer.toHexString(G).toUpperCase();
             if (x.length() >= 3) {
                 System.out.println(x.substring(x.length() - 3));
